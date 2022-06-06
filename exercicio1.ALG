@@ -1,4 +1,4 @@
-Algoritmo "Exemplo"
+Algoritmo "exercicio 1"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Autor(a)    : Luany Boneli
 // Data atual  : 26/05/2022
