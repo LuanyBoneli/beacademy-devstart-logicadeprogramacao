@@ -1,33 +1,31 @@
-Algoritmo "semnome"
+Algoritmo "exercicio 7"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 26/05/2022
+// Autor(a)    : Luany Boneli
+// Data atual  : 04/06/2022
+
 Var
-numero1,numero2:REAL
-operacao:CARACTERE
-resultado:REAL
-
-
+   nome: CARACTERE;
+   idade: INTEIRO;
 
 Inicio
-ESCREVA("Digite o primeiro número: ")
-LEIA (numero1)
-ESCREVA("Digite a operação: ")
-LEIA(operacao)
-ESCREVA("Digite o segundo número: ")
-LEIA(numero2)
-ESCOLHA operacao
-CASO "+"
-  resultado:=numero1 + numero2
-CASO "-"
-  resultado:=numero1 - numero2
-OUTROCASO
-   resultado:=-1
+   escreva("Digite seu nome: ")
+   leia(nome)
+   escreva("Digite sua idade: ")
+   leia(idade)
+   escreval("")
 
-FIMESCOLHA
-ESCREVA("Resultado: ",resultado)
-
+   se(idade < 18) entao
+      escreval("Menor de idade")
+   senao
+      se((idade >= 18) E (idade < 60)) entao
+         escreval("Adulto")
+      senao
+         se(idade >= 60) entao
+            escreval("Idoso")
+         senao
+            escreval("Não é uma idade!")
+         fimse
+      fimse
+   fimse
 
 Fimalgoritmo
